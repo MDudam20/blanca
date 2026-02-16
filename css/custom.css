@@ -11162,7 +11162,7 @@ body {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #ffff;
     letter-spacing: 1px;
     text-transform: capitalize;
     text-shadow: 0 4px 20px rgba(0,0,0,0.4);
@@ -11170,7 +11170,9 @@ body {
 
 /* Highlight Text (Welcome to BLANCA) */
 .highlight-text {
-    color: #b8d6ff;
+    color: #CFAF6E;
+     /* color: #ffffff; */
+    -webkit-text-stroke: 1px;
     font-weight: 800;
 }
 
@@ -11206,7 +11208,7 @@ body {
 }
 
 .nav:hover {
-  background: #F26829;
+  background: #061346;
   transform: translateY(-50%) scale(1.1);
 }
 
