@@ -401,17 +401,17 @@ a:focus{
 }
 
 .section-title h3{
-	display: inline-block;
-	font-family: var(--default-font);
-	font-size: 16px;
+	    display: inline-block;
+    font-family: var(--default-font);
+    font-size: 16px;
     font-weight: 500;
-	line-height: 1.6em;
+    line-height: 2.8em;
     text-transform: capitalize;
     color: var(--primary-color);
-	background: url('../images/BLANCA/fav1.png') no-repeat;
-	background-position: left center;
-	background-size: 38px auto;   /* 👈 Sirf yeh value change ki */
-	padding-left: 40px;           /* 👈 Image bada kiya toh space bhi badhao */
+    background: url(../images/BLANCA/Horse.png) no-repeat;
+    background-position: left center;
+    background-size: 65px auto;
+    padding-left: 75px;
     margin-bottom: 15px;
 }
 
@@ -2128,14 +2128,14 @@ header.main-header .header-sticky.active{
 }
 
 .award-item{
-	border-bottom: 1px solid var(--divider-color);
+	/* border-bottom: 1px solid var(--divider-color); */
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	gap: 80px;
 	margin-bottom: 30px;
-	padding-bottom: 30px;
+	/* padding-bottom: 30px; */
 }
 
 .award-item:last-child{
@@ -2145,7 +2145,8 @@ header.main-header .header-sticky.active{
 }
 
 .award-item-info{
-	width: calc(100% - 130px);
+	/* width: calc(100% - 130px); */
+	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -2721,9 +2722,17 @@ header.main-header .header-sticky.active{
 .main-footer{
 	position: relative;
 	padding: 100px 0 0;
+	background-image: url(../images/BLANCA/bg.png);
+	    position: relative;
+    padding: 100px 0 0;
+    background-image: url(../images/BLANCA/bg.png);
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
-.main-footer::before{
+/* .main-footer::before{
 	content: '';
     position: absolute;
     top: 0;
@@ -2734,7 +2743,7 @@ header.main-header .header-sticky.active{
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: auto;
-}
+} */
 
 .main-footer .container{
 	position: relative;
@@ -2877,7 +2886,7 @@ header.main-header .header-sticky.active{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 30px;
-	margin-left: 5.208vw;
+	margin-left: 3.208vw;
 }
 
 .footer-links{
@@ -7165,7 +7174,7 @@ header.main-header .header-sticky.active{
 }
 
 .why-choose-image-box-2-metal{
-	width: calc(48% - 15px);
+	width: calc(48% - px);
 }
 
 .why-choose-image-box-2-metal .get-in-touch-circle-metal{
@@ -7187,7 +7196,7 @@ header.main-header .header-sticky.active{
 
 .why-choose-image-2-metal figure img{
 	width: 100%;
-	aspect-ratio: 1 / 1.4223;
+	aspect-ratio: 3 / 3;
 	object-fit: cover;
 	border-radius: 20px;
 }
@@ -11407,4 +11416,96 @@ body {
         bottom: 70px;
         right: 15px;
     }
+}
+.project-filter-section{
+    overflow:hidden;
+}
+
+/* FILTER BUTTONS */
+.filter-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+.filter-btn{
+    border:2px solid #000;
+    padding:10px 25px;
+    background:#fff;
+    font-weight:600;
+    transition:0.3s;
+    min-width:120px;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+    background:#000;
+    color:#fff;
+}
+
+/* PROJECT CARD */
+.project-card{
+    border:2px solid #000;
+    padding:15px;
+    text-align:center;
+    height:100%;
+    transition:0.4s;
+}
+.project-card h5{
+	color: #fff;
+	padding-top: 10px;
+}
+.project-card .type{
+	    background-color: var(--accent-secondary-color);
+    width: fit-content;
+    padding: 7px;
+    color: #000;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+}
+
+.project-card p{
+	color: var(--accent-secondary-color);
+}
+.project-card img{
+    width:100%;
+    /* height:220px; */
+	    aspect-ratio: 1 / 1;
+    object-fit:cover;
+}
+
+/* MOBILE */
+@media(max-width:576px){
+
+.filter-btn{
+    padding:8px 15px;
+    font-size:14px;
+    min-width:auto;
+}
+
+.project-card img{
+    height:180px;
+}
+
+}
+
+/* TABLET */
+@media(min-width:577px) and (max-width:991px){
+
+.project-card img{
+    /* height:200px; */
+}
+
+}
+
+/* LARGE SCREEN */
+@media(min-width:1400px){
+
+.project-card img{
+    /* height:260px; */
+	    aspect-ratio: 1 / 1;
+}
+
 }
