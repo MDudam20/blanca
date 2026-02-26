@@ -616,7 +616,7 @@ header.main-header .header-sticky.active{
 }
 
 .main-menu ul li{
-	margin: 0 10px;
+	margin: 0 6px;
 	position: relative;
 }
 
@@ -11674,7 +11674,7 @@ color:#000;
 transform:scale(1.1) rotate(90deg);
 }
 .navbar-brand img{
-	width:270px;
+	width:250px;
 }
 @media(max-width:767px){
 
