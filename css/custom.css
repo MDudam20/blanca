@@ -986,7 +986,7 @@ header.main-header .header-sticky.active{
 }
 
 .about-us-image-box-1{
-	width: 78%;
+	/* width: 78%; */
 }
 
 .about-us-image figure{
@@ -2154,15 +2154,16 @@ header.main-header .header-sticky.active{
 }
 
 .award-item-info{
-	/* width: calc(100% - 130px); */
-	width: 90%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: 80px;
-	border: 2px solid;
+	/* width: calc(100% - 130px);  */
+    width: 100%;
+    /* display: flex; */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    border: 2px solid;
     padding: 14px;
-	background: #000a32;
+    text-align: center;
+    background: #000a32;
     border-radius: 20px;
 }
 
@@ -2181,7 +2182,8 @@ header.main-header .header-sticky.active{
 }
 
 .award-item-cotent{
-	width: calc(100% - 200px);
+	/* width: calc(100% - 200px); */
+	padding: 10px 0px;
 }
 
 .award-item-cotent ul{
@@ -2191,7 +2193,7 @@ header.main-header .header-sticky.active{
 }
 
 .award-item-cotent ul li{
-	position: relative;
+	/* position: relative; */
 	line-height: 1.5em;
 	font-weight: 500;
 	color: var(--accent-secondary-color);
@@ -4878,7 +4880,9 @@ header.main-header .header-sticky.active{
 }
 
 @media only screen and (max-width: 1440px){
-
+.award-item:last-child{
+	padding-bottom: 20px;
+}
 	.container{
         max-width: 1300px;
     }
@@ -4938,7 +4942,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.award-item-cotent{
-		width: calc(100% - 150px);
+		/* width: calc(100% - 150px); */
 	}
 
 	.pricing-item{
@@ -11674,7 +11678,7 @@ color:#000;
 transform:scale(1.1) rotate(90deg);
 }
 .navbar-brand img{
-	width:250px;
+	width:300px;
 }
 @media(max-width:767px){
 
@@ -11804,4 +11808,9 @@ transform:scale(1.1) rotate(90deg);
     text-decoration: none;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
+}
+.info{
+	font-weight: 700;
+	font-size: 19px;
+	color: #000;
 }
